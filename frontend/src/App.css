@@ -1,0 +1,224 @@
+/*1. Main Page Styling*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #142456;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/*2.Main Container */
+.app-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px;
+
+}
+
+/*3.Heading */
+h1 {
+    text-align: centr;
+    color: #142456;
+    font-size: 36px;
+    margin-bottom: 8px;
+
+}
+
+p {
+    text-align: centre;
+    color: #64748b;
+    font-size: 16px;
+}
+
+/*4.Dashboard Heading*/
+h2 {
+    text-align: centre;
+    color: #142456;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+/*5. Search Box*/
+
+input[type="text"] {
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    padding: 12px 15px;
+    margin: 15px auto 30px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: white;
+    color: #142456;
+}
+
+input[type="test"]:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/*6.Leads Table*/
+.leads-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+/*7.Table Header*/
+
+.leads-table thread {
+    background-color: #142456;
+    color: white;
+}
+
+.leads-table th {
+    width: 20%;
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #142456;
+    color: white;
+}
+
+/*8.Table Data*/
+.leads-table td {
+    width: 20%;
+    padding: 16px 12px;
+    text-align: left;
+    font-size: 14px;
+    color: #334155;
+    border-bottom: 1px solid#e5e7eb;
+    overflow-wrap: anywhere;
+}
+
+/*9.Alternate Row Colors*/
+.leads-table tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+
+}
+
+/*10. Hover Effect*/
+.leads-table tbody tr:hover {
+    background-color: #eaf2ff,
+}
+
+/*11.Mobile Responsive*/
+@media(max-width:600px) {
+    .app-container {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .leads-table th,
+    .leads-table td {
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+}
+
+.leads-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.leads-table thread {
+    display: table-header-group;
+}
+
+.lead-table tbody {
+    display: table-row-group;
+}
+
+.leads-table tr {
+    display: table-row;
+}
+
+.leads-table th,
+.leads-table td {
+    display: table-cell;
+}
+
+h1,
+h2,
+.subtitle,
+p {
+    text-align: center;
+}
+
+.leads-table th,
+.leads-table td {
+    vertical-align: middle;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h1+p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px auto 30px;
+}
+
+/*LeadIQ form styling*/
+input {
+    padding: 12px;
+    margin: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8
+}
+
+/*LeadIQ form layout*/
+input[placeholder="Company Name"] {
+    display: block;
+    width: 90%;
+    max-width: 350px;
+    margin: 12px auto;
+}
+
+input[placeholder="Industry"],
+input[placeholder="Website"],
+input[placeholder="Contact Name"] {
+    width: 42%;
+    max-width: 170px;
+}
